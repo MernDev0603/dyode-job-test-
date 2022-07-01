@@ -1,0 +1,18 @@
+{
+  "fonts": {
+    "primary": {
+      "name": "Lato",
+      "weights": [300, 400, 500, 600, 700]
+    },
+    "special": {
+      "name": "Pacifico",
+      "weights": [400]
+    }
+  },
+  "colors": {
+    "primary": "#10504F",
+    "black": "#000000",
+    "white": "#FFFFFF",
+    "headingColor": "#FFFFFF"
+  }
+}
