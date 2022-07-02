@@ -48,8 +48,8 @@ export const Button = styled.button`
   background: #CCC;
   color: #FFF;
   border: 1px solid #CCC;
-  border-radius: ${({ borderRadius }) => !borderRadius ? '10px' : borderRadius};
-  line-height: 20px;
+  border-radius: ${({ borderRadius }) => !borderRadius ? '0px' : borderRadius};
+  line-height: 17px;
   padding: 10px 17px;
   font-size: 16px;
   font-weight: 600;
@@ -137,16 +137,35 @@ export const Button = styled.button`
     background: ${props => props.theme.colors.primary};
     color: ${props => props.theme.colors.white};;
     border-color: ${props => props.theme.colors.primary};
-    box-shadow: 0px 4px 20px rgba(0, 117, 255, 0.35);
     &:hover {
       background: ${props => darken(0.04, props.theme.colors.primary)};
     }
     &:active {
       background: ${props => darken(0.1, props.theme.colors.primary)};
+      box-shadow: 0px 4px 20px rgba(0, 117, 255, 0.35);
     }
     ${({ naked }) => naked && css`
       background: transparent;
       border-color: ${props => props.theme.colors.white};
     `}
+  `}
+
+  ${({ color }) => color === 'black' && css`
+    display: flex;
+    align-items: center;
+    background: ${props => props.theme.colors.black};
+    color: ${props => props.theme.colors.white};
+    border-color: ${props => props.theme.colors.black};
+    &:hover {
+      background: ${props => props.theme.colors.white};
+      color: ${props => props.theme.colors.black};
+      border-color: ${props => props.theme.colors.white};
+    }
+    &:active {
+      background: ${props => props.theme.colors.white};
+      color: ${props => props.theme.colors.black};
+      border-color: ${props => props.theme.colors.white};
+      box-shadow: 0px 4px 20px rgba(0, 117, 255, 0.35);
+    }
   `}
 `

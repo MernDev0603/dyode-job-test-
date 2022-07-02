@@ -3,6 +3,7 @@ import {
   Routes,
   Route
 } from 'react-router-dom'
+import { Footer } from './components/Footer'
 import { Header } from './components/Header'
 import { useSession } from './contexts/SessionContext'
 
@@ -22,6 +23,7 @@ export const App = () => {
             <Route path='/' element={<Home/>} />
             <Route path='*' element={<PageNotFound/>} />
           </Routes>
+          <Footer />
         </>
       )}
     </>
