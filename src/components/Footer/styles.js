@@ -81,12 +81,14 @@ export const SocialList = styled.div`
   justify-content: flex-start;
   svg {
     transition: all 0.2s ease-in-out;
+    width: 26px;
+    height: 26px;
   }
   a {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 15px;
+    margin-right: 20px;
     margin-top: 10px;
     &:hover {
       svg {
