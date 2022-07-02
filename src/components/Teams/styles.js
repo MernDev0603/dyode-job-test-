@@ -54,6 +54,9 @@ export const PersonList = styled.div`
     }
     > div:last-child {
       width: calc(33.33% - 20px);
+      img {
+        max-height: initial;
+      }
     }
   }
 `
